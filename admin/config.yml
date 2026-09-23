@@ -1,0 +1,53 @@
+backend:
+  name: git-gateway
+  branch: main # Branch to update (optional; defaults to master)
+
+media_folder: "images"
+public_folder: "images"
+
+collections:
+  - name: "content"
+    label: "Website Content"
+    file: "data/content.json"
+    description: "Manage Team, Services, and Portfolio"
+    fields:
+      - name: stats
+        label: Company Statistics
+        widget: object
+        fields:
+          - {label: Clients Worldwide, name: clients, widget: string}
+          - {label: Projects Delivered, name: projects, widget: string}
+          - {label: Years Experience, name: experience, widget: string}
+          - {label: Support (e.g. 24), name: support, widget: string}
+
+      - name: team
+        label: Team Members
+        widget: list
+        fields:
+          - {label: Name, name: name, widget: string}
+          - {label: Role, name: role, widget: string}
+          - {label: Image, name: image, widget: image}
+          - {label: Description, name: description, widget: text}
+
+      - name: services
+        label: Services
+        widget: list
+        fields:
+          - {label: ID (e.g. 'ai'), name: id, widget: string}
+          - {label: Title, name: title, widget: string}
+          - {label: Icon Image, name: icon, widget: image}
+          - {label: Description, name: description, widget: text}
+          - name: bullets
+            label: Features/Bullets
+            widget: list
+            field: {label: Feature, name: feature, widget: string}
+
+      - name: portfolio
+        label: Portfolio Items
+        widget: list
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Category (ai/web/mobile/seo), name: category, widget: string}
+          - {label: Image, name: image, widget: image}
+          - {label: Client, name: client, widget: string}
+          - {label: Description, name: description, widget: text}

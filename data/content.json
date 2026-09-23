@@ -1,0 +1,243 @@
+{
+  "team": [
+    {
+      "name": "Sarah Rizvi",
+      "role": "AI & ML Engineer",
+      "image": "images/team_sarah.jpg?v=1790141710",
+      "description": "Specializes in NLP, computer vision, and building intelligent agents that automate complex workflows."
+    },
+    {
+      "name": "Hassan Malik",
+      "role": "Lead Full-Stack Developer",
+      "image": "images/team_hassan.jpg?v=1790141710",
+      "description": "Expert in React, Next.js, Python and cloud architecture. Delivers high-performance web applications and SaaS products."
+    },
+    {
+      "name": "Omar Khalid",
+      "role": "SEO & Marketing Lead",
+      "image": "images/team_omar.jpg?v=1790141710",
+      "description": "Data-driven digital marketer specializing in SEO, PPC, and growth strategies that consistently outperform targets."
+    },
+    {
+      "name": "Ali Raza",
+      "role": "Mobile App Developer",
+      "image": "images/team_ali.jpg?v=1790141710",
+      "description": "React Native and Flutter developer creating beautiful, performant mobile apps for iOS and Android."
+    },
+    {
+      "name": "Ayesha Khan",
+      "role": "UX/UI Designer",
+      "image": "images/team_ayesha.jpg?v=1790141710",
+      "description": "Crafting intuitive, user-centered designs that drive engagement and create memorable brand experiences."
+    },
+    {
+      "name": "Fatima Noor",
+      "role": "QA Engineer",
+      "image": "images/team_fatima.jpg?v=1790141710",
+      "description": "Ensuring flawless digital experiences through rigorous automated and manual testing methodologies."
+    }
+  ],
+  "portfolio": [
+    {
+      "title": "AI Customer Support Agent",
+      "category": "ai",
+      "image": "images/pf_ai1.jpg",
+      "client": "TechRetail UK",
+      "description": "Custom LLM-powered bot handling 80% of level 1 support."
+    },
+    {
+      "title": "Hospitality Booking System",
+      "category": "web",
+      "image": "images/pf_web1.jpg",
+      "client": "StayBoutique",
+      "description": "High-conversion custom booking engine and dashboard."
+    },
+    {
+      "title": "Fitness Tracking App",
+      "category": "mobile",
+      "image": "images/pf_mob1.jpg",
+      "client": "FitLife Pro",
+      "description": "React Native app with real-time workout tracking."
+    },
+    {
+      "title": "WhatsApp Sales Bot",
+      "category": "ai",
+      "image": "images/pf_ai2.jpg",
+      "client": "AutoDealerships",
+      "description": "Automated lead qualification and test-drive scheduling."
+    },
+    {
+      "title": "Global Logistics Dashboard",
+      "category": "web",
+      "image": "images/pf_web2.jpg",
+      "client": "ShipFast Int.",
+      "description": "Real-time tracking and supply chain management UI."
+    },
+    {
+      "title": "E-Commerce SEO Overhaul",
+      "category": "seo",
+      "image": "images/pf_seo.jpg",
+      "client": "StyleBrand",
+      "description": "Achieved 210% increase in organic traffic in 6 months."
+    },
+    {
+      "title": "AI Financial Analyzer",
+      "category": "ai",
+      "image": "images/pf_ai3.jpg",
+      "client": "FinTech Innovators",
+      "description": "Automated data extraction and risk assessment tool."
+    },
+    {
+      "title": "Food Delivery App",
+      "category": "mobile",
+      "image": "images/pf_mob2.jpg",
+      "client": "QuickBite",
+      "description": "Cross-platform app for users, drivers, and restaurants."
+    },
+    {
+      "title": "Corporate SaaS Platform",
+      "category": "web",
+      "image": "images/pf_web3.jpg",
+      "client": "HR Solutions",
+      "description": "Cloud-based employee management and payroll system."
+    }
+  ],
+  "services": [
+    {
+      "id": "ai",
+      "title": "AI Agents & Chatbots",
+      "icon": "images/srv_ai.jpg",
+      "description": "Custom intelligent AI agents, WhatsApp bots, 24/7 customer service automation, lead qualification bots. We leverage advanced LLMs to transform your customer experience.",
+      "bullets": [
+        "24/7 Customer Support",
+        "WhatsApp & Messenger Bots",
+        "Lead Qualification AI",
+        "Custom AI Assistants",
+        "Multi-language Support"
+      ]
+    },
+    {
+      "id": "automation",
+      "title": "Business Automation",
+      "icon": "images/srv_auto.jpg",
+      "description": "End-to-end workflow automation, system integrations, RPA solutions that eliminate repetitive tasks. Connect your tools and scale efficiently.",
+      "bullets": [
+        "Workflow Automation",
+        "API Integrations",
+        "CRM & ERP Syncing",
+        "Zapier & Make Setup",
+        "Custom RPA Scripts"
+      ]
+    },
+    {
+      "id": "web",
+      "title": "Web Development",
+      "icon": "images/srv_web.jpg",
+      "description": "High-performance, scalable web applications and marketing sites built with modern frameworks. We deliver speed, security, and stunning UI.",
+      "bullets": [
+        "React & Next.js Apps",
+        "Custom Landing Pages",
+        "E-Commerce Stores",
+        "Performance Optimization",
+        "Secure Architecture"
+      ]
+    },
+    {
+      "id": "seo",
+      "title": "SEO & Marketing",
+      "icon": "images/srv_seo.jpg",
+      "description": "Data-driven SEO strategies, technical audits, and content marketing to dominate search rankings and drive highly qualified organic traffic.",
+      "bullets": [
+        "Technical SEO Audits",
+        "Keyword Strategy",
+        "On-page Optimization",
+        "Link Building",
+        "Conversion Rate Optimization"
+      ]
+    },
+    {
+      "id": "saas",
+      "title": "SaaS Development",
+      "icon": "images/srv_saas.jpg",
+      "description": "End-to-end SaaS product development. From MVP to enterprise scale, we build robust multi-tenant architectures and subscription billing systems.",
+      "bullets": [
+        "MVP Development",
+        "Multi-tenant Architecture",
+        "Stripe Integration",
+        "User Dashboards",
+        "Cloud Infrastructure"
+      ]
+    },
+    {
+      "id": "mobile",
+      "title": "Mobile Apps",
+      "icon": "images/srv_mobile.jpg",
+      "description": "Cross-platform and native mobile applications that deliver native-like performance and exceptional user experiences on iOS and Android.",
+      "bullets": [
+        "React Native & Flutter",
+        "iOS & Android",
+        "App Store Optimization",
+        "Offline Support",
+        "Push Notifications"
+      ]
+    },
+    {
+      "id": "uiux",
+      "title": "UI/UX Design",
+      "icon": "images/srv_web.jpg",
+      "description": "We craft intuitive, engaging, and beautiful user interfaces. Our user-centered design approach ensures your digital products are both stunning and highly functional.",
+      "bullets": [
+        "User Research & Personas",
+        "Wireframing & Prototyping",
+        "Visual Design & Branding",
+        "Usability Testing",
+        "Design Systems"
+      ]
+    },
+    {
+      "id": "smm",
+      "title": "Social Media Management",
+      "icon": "images/srv_seo.jpg",
+      "description": "Comprehensive social media strategies, content creation, and paid advertising campaigns designed to build brand awareness, engage your audience, and drive conversions.",
+      "bullets": [
+        "Social Media Strategy",
+        "Content Creation & Curation",
+        "Community Management",
+        "Paid Social Ads (Meta, LinkedIn)",
+        "Analytics & Reporting"
+      ]
+    },
+    {
+      "id": "erp",
+      "title": "Enterprise Software & ERP",
+      "icon": "images/srv_saas.jpg",
+      "description": "Custom Enterprise Resource Planning (ERP) systems, booking engines, and real-time dashboards designed to streamline complex business operations and data management.",
+      "bullets": [
+        "Custom ERP Development",
+        "Booking & Reservation Systems",
+        "Data Analytics Dashboards",
+        "Legacy System Modernization",
+        "System Integration"
+      ]
+    },
+    {
+      "id": "consulting",
+      "title": "Consulting",
+      "icon": "images/srv_consulting.jpg",
+      "description": "Strategic technology consulting to help you choose the right tools, architecture, and roadmap for your digital transformation.",
+      "bullets": [
+        "Tech Stack Selection",
+        "Digital Transformation",
+        "Architecture Review",
+        "Security Audits",
+        "Team Scaling Advice"
+      ]
+    }
+  ],
+  "stats": {
+    "clients": "50",
+    "projects": "100",
+    "experience": "3",
+    "support": "24"
+  }
+}
