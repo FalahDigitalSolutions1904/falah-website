@@ -1,4 +1,4 @@
-/* ===== NAVBAR SCROLL ===== */
+﻿/* ===== NAVBAR SCROLL ===== */
 const navbar = document.getElementById('navbar');
 window.addEventListener('scroll', () => {
   navbar.classList.toggle('scrolled', window.scrollY > 50);
@@ -107,11 +107,19 @@ if (cForm) {
     const origText = btn.textContent;
     btn.textContent = 'Sending…';
     btn.disabled = true;
-    setTimeout(() => {
-      cForm.style.display = 'none';
-      const succ = document.getElementById('formSuccess');
-      if (succ) succ.classList.add('show');
-    }, 1400);
+    const formData = new FormData(cForm);
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString()
+    }).then(() => {
+      cForm.style.display = "none";
+      const succ = document.getElementById("formSuccess");
+      if (succ) succ.classList.add("show");
+    }).catch(e => {
+      btn.textContent = origText;
+      btn.disabled = false;
+    });
   });
 }
 
