@@ -195,24 +195,22 @@ document.addEventListener('DOMContentLoaded', () => {
           div.dataset.cat = item.category;
 
           const imgBox = document.createElement('div');
-          imgBox.className = 'pf-img-box';
+          imgBox.className = 'pf-img';
           const img = document.createElement('img');
           img.src = item.image;
           img.alt = item.title;
-          img.className = 'pf-img';
           imgBox.appendChild(img);
           div.appendChild(imgBox);
 
           const info = document.createElement('div');
-          info.className = 'pf-info';
+          info.className = 'pf-body';
 
           const cat = document.createElement('div');
-          cat.className = 'pf-cat';
+          cat.className = 'pf-tag';
           cat.textContent = item.category.toUpperCase();
           info.appendChild(cat);
 
           const title = document.createElement('h3');
-          title.className = 'pf-title';
           title.textContent = item.title;
           info.appendChild(title);
 
