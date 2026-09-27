@@ -108,15 +108,33 @@ if (cForm) {
     btn.textContent = 'Sending…';
     btn.disabled = true;
     const formData = new FormData(cForm);
-    fetch("/", {
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    fetch("https://api.web3forms.com/submit", {
       method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams(formData).toString()
-    }).then(() => {
-      cForm.style.display = "none";
-      const succ = document.getElementById("formSuccess");
-      if (succ) succ.classList.add("show");
-    }).catch(e => {
+      headers: {
+        "Content-Type": "application/json",
+        "Accept": "application/json"
+      },
+      body: json
+    })
+    .then(async (response) => {
+      let result = await response.json();
+      if (response.status == 200) {
+        cForm.style.display = "none";
+        const succ = document.getElementById("formSuccess");
+        if (succ) succ.classList.add("show");
+      } else {
+        console.log(result);
+        alert(result.message || "Something went wrong!");
+        btn.textContent = origText;
+        btn.disabled = false;
+      }
+    })
+    .catch(error => {
+      console.log(error);
+      alert("Something went wrong!");
       btn.textContent = origText;
       btn.disabled = false;
     });
